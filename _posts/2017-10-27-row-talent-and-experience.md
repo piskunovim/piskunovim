@@ -3,6 +3,7 @@ layout: post
 title: Row Talent || Experience
 date: '2017-10-26 23:52:12+03:00'
 categories: pblog
+comments: true
 ---
 
 ### Introduction

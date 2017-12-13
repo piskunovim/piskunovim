@@ -19,12 +19,22 @@
         </label>
 
         <div class="trigger">
-          {% for path in page_paths %}
-            {% assign my_page = site.pages | where: "path", path | first %}
-            {% if my_page.title %}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {% endif %}
+
+          <a class="page-link" href="/">Blog</a>
+
+          {% assign sorted_pages = site.pages | sort:"order" %}
+
+          {% for pages in sorted_pages %}
+
+             {%if pages.url contains 'index' %}
+
+             {% else %}
+               {% if pages.title %}
+               <a class="page-link" href="{{ pages.url | relative_url }}">{{ pages.title | escape }}</a>
+               {% endif %}
+             {% endif %}
           {% endfor %}
+
         </div>
       </nav>
     {% endif %}

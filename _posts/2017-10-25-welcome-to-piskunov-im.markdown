@@ -3,6 +3,7 @@ layout: post
 title:  "Hello everyone!"
 date:   2017-10-25 23:36:53 +0300
 categories: pblog
+comments: true
 ---
 I appreciate that you're here.
 
