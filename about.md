@@ -24,5 +24,5 @@ Subscribe me on Twitter:
 
 {% soundcloud_sound 251100534 %}
 
-[github-link]: https://github.com/unuservize
-[twitter-link]: https://twitter.com/Unuservize
+[github-link]: https://github.com/piskunovim
+[twitter-link]: https://twitter.com/piskunovim
