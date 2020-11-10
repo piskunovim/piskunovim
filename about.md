@@ -22,7 +22,7 @@ You can find my project on GitHub:
 Subscribe me on Twitter:
 [@unuservize][twitter-link]
 
-{% soundcloud_sound 251100534 %}
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F251100534&show_artwork=true"></iframe>
 
 [github-link]: https://github.com/piskunovim
 [twitter-link]: https://twitter.com/piskunovim
