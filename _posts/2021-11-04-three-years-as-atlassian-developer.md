@@ -31,6 +31,6 @@ This simple thought means that if Atlassian Cloud services are not available, th
 
 ### So
 
-If we talk very succinctly about the limitations, then I described the fundamental ideas that you need to understand before starting to implement any feature in the Atlassian Cloud world. But, of course, on the way of implementation, the developer encounters various challenges that must be overcome. And it will be my pleasure to share some of the solutions to problems that you might encounter in future posts.
+We talked about just one fundamental idea that you need to understand before starting to implement any feature in the Atlassian Cloud world. But, of course, on the way of implementation, the developer encounters various challenges that must be overcome. It will be my pleasure to share some of the solutions to problems that you might encounter in future posts.
 
 Please subscribe and...see you. :)
