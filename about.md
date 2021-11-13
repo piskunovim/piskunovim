@@ -17,10 +17,10 @@ Stack doesn't make a developer, but developer creates its own stack. Let's figur
 
 
 You can find my project on GitHub:
-[unuservize][github-link]
+[piskunovim][github-link]
 
 Subscribe me on Twitter:
-[@unuservize][twitter-link]
+[@piskunovim][twitter-link]
 
 <iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F251100534&show_artwork=true"></iframe>
 
