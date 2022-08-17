@@ -3,7 +3,7 @@ layout: post
 title: My lovely keyboard
 slug: my-lovely-keyboard-device
 categories: pblog
-date: '2022-08-17 22:56:15+03:00'
+date: '2022-08-17 22:33:15+03:00'
 ---
 
 This is the first post in the "Purchases I have not regretted" series. It's not an advertisement or technical review. Please, let me know if you see something wrong in my text that could help to improve it. Thank you!
