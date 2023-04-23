@@ -2,27 +2,33 @@
 layout: page
 title: About
 permalink: /about/
-order: 2
+order: 3
 ---
 
 ![Piskunovim]({{ "/assets/piskunovim.jpg"}})
 
 
+My name is Igor Piskunov. I'm a software engineer specializing in JavaScript with more than 7 years of experience. My expertise spans a wide range of software development areas, including:
 
-My name is Igor. I’m a full stack developer with middle knowledge in front-end, back-end, and mobile development. I’ve started learning to code with C++, then learned Java SE basics and developed my first Android 4.4 application on the base of self-service terminals software (I worked with this kind of systems for 3 years).
+- Payment systems and self-service terminal software (PayPal, Stripe, Worldline, etc.);
+- Corporate product shipping services, scanner software, and integration with popular delivery services (UPS, FedEx, Canada Post, etc.);
+- E-commerce products featured on renowned marketplaces (Amazon, Best Buy, etc.);
+- Extension development for Atlassian products (Jira, Confluence, etc.);
+- Facilitating business connections with accounting platforms (Xero, Sage, Exact, Wave, etc.);
+- Mobile application development for Android and iOS.
 
-Then I’ve learned JavaScript and used NodeJS as a server for an Android chat application. And that was my first big experience with server-side JS, WebSockets and SMS gateway. Since last year I've become a developer in Canada e-commerce project.
+Currently, I am working on the ultimate advertising tracker, [Keitaro.io][keitaro-link], and have recently become fascinated by the field of machine learning.
 
-Stack doesn't make a developer, but developer creates its own stack. Let's figure out something new every day. Let's keep in touch.
+If you enjoy my blog, notice any errors, have suggestions, or have questions related to the topics mentioned above, I would be delighted to respond to your email.
+
+You can find me [mail@piskunov.im][email-link].
+
+Happy coding!
 
 
-You can find my project on GitHub:
-[piskunovim][github-link]
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1050175309&show_artwork=true"></iframe>
 
-Subscribe me on Twitter:
-[@piskunovim][twitter-link]
-
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F251100534&show_artwork=true"></iframe>
-
+[email-link]: mailto:mail@piskunov.im
+[keitaro-link]: https://keitaro.io/en/
 [github-link]: https://github.com/piskunovim
 [twitter-link]: https://twitter.com/piskunovim

@@ -2,7 +2,7 @@
 layout: post
 title: 'Command Line Habits - Vim'
 slug: command-line-habits-vim
-categories: pblog
+categories: linux
 date: '2017-12-08 21:26:47+03:00'
 ---
 

@@ -4,6 +4,30 @@
 
 @import "minima";
 
+.header {
+  display: flex;
+  align-items: center;
+
+  & nav:last-child {
+      margin-left: auto;
+  }
+}
+
+.breadcrumbs {
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+
+.page-content-with-breadcrumbs {
+  padding-top: 3rem;
+}
+
+.delimiter {
+  width: 100%;
+  height: 1px;
+  background: $delimiter-color;
+}
+
 .logo {
   display: inline-flex;
 }
@@ -17,7 +41,9 @@
 .cursor {
   font-weight: 700;
   font-size: 2.5rem;
-  color: #000000;
+  background: -webkit-linear-gradient(#64B7E5, #27B99F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   animation: blink 1s 7;
   margin-top: -5px;
   opacity: 0;
@@ -39,5 +65,34 @@
   }
   50% {
     opacity: 1;
+  }
+}
+
+.content-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.margin-between-posts {
+  margin-top: 3rem;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+
+  & div:not(:last-child) {
+    margin-right: auto;
+  }
+
+  @include media-query($on-palm) {
+    flex-direction: column;
+    align-items: center;
+
+    & div:not(:last-child) {
+      margin-bottom: $spacing-unit / 2;
+      margin-right: 0;
+    }
   }
 }

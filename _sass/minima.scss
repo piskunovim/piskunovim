@@ -2,30 +2,36 @@
 
 // Define defaults for each variable.
 
-$base-font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$base-font-size:   16px !default;
-$base-title-font-size:   25px !default;
+$base-font-family: "Space Mono", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-size:   1rem !default;
+$base-title-font-size:   2.5rem !default;
 $base-font-weight: 400 !default;
+$article-title-font-size: 2rem !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
-$spacing-unit:     30px !default;
+$spacing-unit:     1rem !default;
+$content-spacing:  4rem !default;
 
 
-$text-color:       #111 !default;
-$background-color: #fdfdfd !default;
-$brand-color:      #2a7ae2 !default;
+$text-color:       #C4C7D3 !default;
+$background-color: #22272e !default;
+$brand-color:      $text-color !default;
 
-$grey-color:       #828282 !default;
+$visited-color:    #81838B !default;
+
+$grey-color:       $text-color !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-color-dark:  #C4C7D3 !default;
 
-$black-color:      #000000 !default;
+$light-color:      #e5e5e5 !default;
+
+$delimiter-color:  #4D5264 !default;
 
 // Width of the content area
 $content-width:    800px !default;
 
-$on-palm:          600px !default;
+$on-palm:          650px !default;
 $on-laptop:        800px !default;
 
 $thin:             300 !default;
@@ -49,8 +55,8 @@ $extra-bold:       900 !default;
   font-size: $base-font-size * $ratio;
 }
 
-@mixin relative-title-font-size($ratio) {
-  font-size: $base-title-font-size * $ratio;
+@mixin relative-title-font-size($divider) {
+  font-size: $base-title-font-size / $divider;
 }
 
 // Import partials.

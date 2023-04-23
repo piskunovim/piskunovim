@@ -7,7 +7,14 @@
 
     {% include header.html %}
 
-    <main class="page-content" aria-label="Content">
+    {% include breadcrumbs.html %}
+    
+    {% assign breadcrumbs_class = '' %}
+    {% if page.url contains 'pblog' or page.url contains 'linux' %}
+      {% assign breadcrumbs_class = 'page-content-with-breadcrumbs' %}
+    {% endif %}
+
+    <main class="page-content {{breadcrumbs_class}}" aria-label="Content">
       <div class="wrapper">
         {{ content }}
       </div>

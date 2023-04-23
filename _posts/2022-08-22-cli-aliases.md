@@ -2,7 +2,7 @@
 layout: post
 title: Command Line Habits - Aliases
 slug: command-line-habits-aliases
-categories: pblog
+categories: linux
 date: '2022-08-22 22:04:00+03:00'
 ---
 

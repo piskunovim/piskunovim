@@ -1,6 +1,6 @@
 <header class="site-header" role="banner">
 
-  <div class="wrapper">
+  <div class="header wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     
@@ -27,22 +27,27 @@
         </label>
 
         <div class="trigger">
-
-          <a class="page-link" href="/">Blog</a>
+          {% assign home_active = '' %}
+          {% if page.url == '/' or page.url == '/index.html' %}
+            {% assign home_active = 'active' %}
+          {% endif %}
+          <a class="page-link {{ home_active }}" href="/">All</a>
 
           {% assign sorted_pages = site.pages | sort:"order" %}
 
-          {% for pages in sorted_pages %}
+            {% for pages in sorted_pages %}
+              {% if pages.exclude_from_pages_list or pages.url contains 'index' %}
+                {% continue %}
+              {% endif %}
 
-             {%if pages.url contains 'index' %}
-
-             {% else %}
-               {% if pages.title %}
-               <a class="page-link" href="{{ pages.url | relative_url }}">{{ pages.title | escape }}</a>
-               {% endif %}
-             {% endif %}
+              {% if pages.title %}
+                {% assign page_active = '' %}
+                {% if page.url == pages.url %}
+                  {% assign page_active = 'active' %}
+                {% endif %}
+                <a class="page-link {{ page_active }}" href="{{ pages.url | relative_url }}">{{ pages.title | escape }}</a>
+              {% endif %}
           {% endfor %}
-
         </div>
       </nav>
     {% endif %}

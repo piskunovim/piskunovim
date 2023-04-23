@@ -23,7 +23,7 @@ twitter_username: piskunovim
 github_username:  piskunovim
 pagination:
   enabled: true
-  per_page: 5
+  per_page: 7
   category: 'posts'
   sort_field: 'date'
   sort_reverse: true

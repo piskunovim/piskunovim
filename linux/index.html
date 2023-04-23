@@ -1,0 +1,17 @@
+---
+layout: default
+title: Linux
+permalink: /linux/
+order: 1
+---
+
+<h2>{{ page.title }} Posts</h2>
+<ul class="post-list">
+    {% for post in site.categories.linux %}
+    <li class="{{ margin_class }}">
+        {% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <span><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></span>
+    </li>
+    {% endfor %}
+</ul>

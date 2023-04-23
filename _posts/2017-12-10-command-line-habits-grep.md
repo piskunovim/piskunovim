@@ -2,7 +2,7 @@
 layout: post
 title: 'Command Line Habits - Grep'
 slug: command-line-habits-grep
-categories: pblog
+categories: linux
 date: '2017-12-10 20:16:25+03:00'
 ---
 

@@ -30,11 +30,14 @@ body {
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: $spacing-unit * 2.5;
+}
+
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit;
 }
 
 
@@ -66,7 +69,7 @@ figcaption {
  * Lists
  */
 ul, ol {
-  margin-left: $spacing-unit;
+  margin-left: $spacing-unit * 2;
 }
 
 li {
@@ -101,13 +104,17 @@ a {
   &:hover {
     color: $text-color;
     text-decoration: underline;
+
+    background: -webkit-linear-gradient(#64B7E5, #27B99F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .social-media-list &:hover {
     text-decoration: none;
 
     .username {
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 }
@@ -138,9 +145,10 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
-  border-radius: 3px;
-  background-color: #eef;
+  color: #E8E14C;
+  border: 1px solid #273842;
+  border-radius: 4px;
+  background-color: #273842;
 }
 
 code {
