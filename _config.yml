@@ -19,6 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Be proud of every step that leads you forward and keep run so, that no one can overtake you.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://piskunov.im" # the base hostname & protocol for your site, e.g. http://example.com
+mastodon_username: piskunovim
 twitter_username: piskunovim
 github_username:  piskunovim
 pagination:
