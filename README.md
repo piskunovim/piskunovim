@@ -1,6 +1,5 @@
 # Hi there, I'm Igor Piskunov 👋
 
-![Profile views](https://gpvc.arturio.dev/piskunovim)
 [![GitHub followers](https://img.shields.io/github/followers/piskunovim?style=social)](https://github.com/piskunovim)
 [![Twitter Follow](https://img.shields.io/twitter/follow/piskunovim?style=social)](https://twitter.com/piskunovim)
 [![LinkedIn](https://img.shields.io/badge/Connect_with_me-LinkedIn-blue?style=social&logo=linkedin)](https://www.linkedin.com/in/piskunovim/)
