@@ -68,10 +68,7 @@ const { title, description, image = '/syakir.webp' } = Astro.props;
 			localStorage.setItem('theme', theme);
 		}
 
-		console.log("theme", theme)
-
 		const isDark = theme === 'dark';
-		console.log({ isDark})
 		
 		isDark ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark');
 
