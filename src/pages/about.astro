@@ -1,0 +1,59 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Ava from '@src/assets/img/piskunovim.png';
+import Prose from '../components/Prose.astro';
+
+---
+
+<BaseLayout
+	title="About Me"
+	description="Lorem ipsum dolor sit amet"
+>
+  <div class='container'>
+		<main class='prose text-lg dark:prose-invert'>
+      <article>
+        <div class='w-full md:flex md:items-center gap-16 mb-10'>
+          <div class="text-pretty leading-9">
+            <h1 class="text-4xl font-bold mb-4">Hi there! 👋</h1>
+            <Prose>
+              <div class="text-lg">
+                <p>I’m a software engineer specializing in JavaScript with over 10 years of experience.</p>
+                 </div>
+            </Prose>
+          </div>
+          <Image src={Ava} alt="Software Engineer" width={300}  class="rounded-3xl rotate-3 mx-4 md:mx-0"/>
+        </div>     
+        <div>
+
+          <p>
+            My expertise spans a wide range of software development areas, including:
+          </p>
+
+
+          <ul>
+            <li>Payment systems and self-service terminal software (PayPal, Stripe, Worldline, etc.);</li>
+            <li>Corporate product shipping services, scanner software, and integration with popular delivery services (UPS, FedEx, Canada Post, etc.);</li>
+            <li>E-commerce products featured on renowned marketplaces (Amazon, Best Buy, etc.);</li>
+            <li>Extension development for Atlassian products (Jira, Confluence, etc.);</li>
+            <li>Facilitating business connections with accounting platforms (Xero, Sage, Exact, Wave, etc.);
+            </li>
+            <li>Mobile application development for Android and iOS.</li>
+          </ul>
+
+          <p>Currently, I am working on the ultimate advertising tracker, Keitaro.io, and have recently become fascinated by the field of machine learning.
+          </p>
+          
+          <p>If you enjoy my blog, notice any errors, have suggestions, or have questions related to the topics mentioned above, I would be delighted to respond to your email.
+          </p>
+
+          <p>You can find me <a href="mailto:mail@piskunov.dev">mail@piskunov.dev</a>.</p>
+          
+          <p>Happy coding!</p>
+
+        </div>
+        </article>
+      </article>
+    </main>
+  </div>
+</BaseLayout>

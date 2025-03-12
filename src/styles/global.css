@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  pre,
+  code {
+    font-size: 0.875rem;
+  }
+
+  .site-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: calc(1.5 * 1rem * 2.25);
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+
+    @apply text-black dark:text-gray-300;
+  }
+
+  .site-title::hover {
+    background: -webkit-linear-gradient(#64b7e5, #27b99f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .logo {
+    display: inline-flex;
+  }
+
+  .animated-title {
+    animation: typing 1s steps(30, end) forwards;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .cursor {
+    font-weight: 700;
+    font-size: 2.5rem;
+    background: -webkit-linear-gradient(#64b7e5, #27b99f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: blink 1s 7;
+    margin-top: -5px;
+    opacity: 0;
+  }
+
+  @keyframes typing {
+    0% {
+      max-width: 0;
+    }
+    100% {
+      max-width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  .giscus {
+    margin-top: 1.5rem;
+  }
+}
