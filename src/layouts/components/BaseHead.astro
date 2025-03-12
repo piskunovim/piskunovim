@@ -44,15 +44,30 @@ const { title, description, image = '/syakir.webp' } = Astro.props;
 <meta property='twitter:image' content={new URL(image, Astro.url)} />
 
 <script is:inline>
+	function observeElementInViewport(element, callback) {
+    	const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					callback(entry.target);
+					observer.disconnect();
+				}
+			});
+    	}, { threshold: 0.1 });
+    
+    	observer.observe(element);
+	}
+
 	function waitForIframe(selector, callback) {
-    	const interval = setInterval(() => {
+		const interval = setInterval(() => {
 			const iframe = document.querySelector(selector);
 			if (iframe && iframe.contentWindow) {
 				clearInterval(interval);
-				iframe.addEventListener('load', () => callback(iframe));
-				callback(iframe);
+				observeElementInViewport(iframe, () => {
+					iframe.addEventListener('load', () => callback(iframe));
+					callback(iframe);
+				});
 			}
-    	}, 200);
+		}, 1000);
 	}
 
 	function sendMessage(message) {
@@ -67,6 +82,7 @@ const { title, description, image = '/syakir.webp' } = Astro.props;
 			theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 			localStorage.setItem('theme', theme);
 		}
+
 
 		const isDark = theme === 'dark';
 		
