@@ -1,7 +1,7 @@
 ---
 title: "5 Wireless Earbuds, 5 Different Experiences"
 slug: "5-wireless-earbuds-5-different-experiences"
-pubDate: 2024-03-09
+pubDate: 2025-03-09
 tags: ["notes", "devices"]
 ---
 

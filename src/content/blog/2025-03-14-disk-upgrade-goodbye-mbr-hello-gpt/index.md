@@ -1,7 +1,7 @@
 ---
 title: "MBR to GPT: A Short Upgrade Tale"
 slug: "mbr-to-gpt-a-short-upgrade-tale"
-pubDate: 2024-03-14
+pubDate: 2025-03-14
 tags: ["notes", "pblog"]
 ---
 
