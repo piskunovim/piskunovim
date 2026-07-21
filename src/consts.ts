@@ -8,3 +8,7 @@ export const GISCUS_CATEGORY = "Announcements";
 export const GISCUS_CATEGORY_ID = "DIC_kwDOCU9ZMs4Cn3OG";
 
 export const GTAG_MEASUREMENT_ID = "G-7PD4495X5D";
+
+export const FP_API_KEY = "FlAXgJbb2CsySnSxo0qK";
+export const FP_ENDPOINT = "https://fp.piskunov.dev";
+export const FP_REGION = "eu";
