@@ -12,3 +12,4 @@ export const GTAG_MEASUREMENT_ID = "G-7PD4495X5D";
 export const FP_API_KEY = "FlAXgJbb2CsySnSxo0qK";
 export const FP_ENDPOINT = "https://fp.piskunov.dev";
 export const FP_REGION = "eu";
+export const FP_WORKER_BASE = "https://fp-lab.piskunovim.workers.dev";

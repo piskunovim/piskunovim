@@ -1,10 +1,16 @@
 import * as Fingerprint from "@fingerprint/agent";
-import { FP_API_KEY, FP_ENDPOINT, FP_REGION } from "../consts";
+import { FP_API_KEY, FP_ENDPOINT, FP_REGION, FP_WORKER_BASE } from "../consts";
 
-const KEY = "fp_vid";
+// const KEY = "fp_vid";
+// const EVENT_KEY = "fp_eid";
+
+type FP = {
+  visitor_id: string;
+  event_id: string;
+};
 
 let agent: Awaited<ReturnType<typeof Fingerprint.start>> | null = null;
-let pending: Promise<string> | null = null;
+let pending: Promise<FP> | null = null;
 
 async function getAgent() {
   if (!agent) {
@@ -18,26 +24,27 @@ async function getAgent() {
   return agent;
 }
 
-async function identify(): Promise<string> {
+async function identify(): Promise<FP> {
   const fp = await getAgent();
-  const { visitor_id } = await fp.get();
+  const { visitor_id, event_id } = await fp.get();
 
   if (!visitor_id) {
     throw new Error("[Error] visitor_id is unavailabe");
   }
 
-  try {
-    sessionStorage.setItem(KEY, visitor_id);
-  } catch {}
+  // try {
+  //   sessionStorage.setItem(KEY, visitor_id);
+  //   if (event_id) sessionStorage.setItem(EVENT_KEY, event_id);
+  // } catch {}
 
-  return visitor_id;
+  return { visitor_id, event_id };
 }
 
-export function getVisitorId(): Promise<string> {
-  try {
-    const cached = sessionStorage.getItem(KEY);
-    if (cached) return Promise.resolve(cached);
-  } catch {}
+export function getVisitorId(): Promise<FP> {
+  // try {
+  //   const cached = sessionStorage.getItem(KEY);
+  //   if (cached) return Promise.resolve(cached);
+  // } catch {}
 
   if (!pending) {
     pending = identify().finally(() => {
@@ -66,11 +73,20 @@ export function initFingerprint(): void {
 
   waitForAnimations().then(() =>
     getVisitorId()
-      .then((id) => {
-        if (import.meta.env.DEV) console.log("[fp]", id);
+      .then((result) => {
+        // let eventId: string | null = null;
+        // try {
+        //   eventId = sessionStorage.getItem(EVENT_KEY);
+        // } catch {}
+        const { visitor_id, event_id } = result;
+        console.log("[fp] visitor", visitor_id);
+        if (event_id) {
+          console.log("[fp] event", `${FP_WORKER_BASE}/event?id=${event_id}`);
+        }
+        console.log("[fp] view ", `${FP_WORKER_BASE}/view`);
       })
       .catch((err) => {
-        if (import.meta.env.DEV) console.warn("[fp]", err);
+        console.warn("[fp]", err);
       }),
   );
 }
