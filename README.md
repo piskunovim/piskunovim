@@ -7,10 +7,8 @@
 
 ## 👨‍💻 About Me
 
-I'm a skilled software engineer with extensive experience in various fields, including web and mobile development, team management, and technology consulting.
+Software engineer at [Fingerprint](https://fingerprint.com)
 
-- 🔭 I’m currently working on: **[Keitaro](https://keitaro.io/en/) - the ultimate advertising tracker**
-- 🌱 I’m currently learning: **Machine Learning**
 - 💬 My blog: **[Piskunov.DEV](https://piskunov.dev)**
 - 📫 How to reach me: **[mail@piskunov.dev](mailto:mail@piskunov.dev)**
 - 🎵 Hobbies: **Playing piano, video editing**.
